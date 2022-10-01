@@ -1,9 +1,8 @@
-# package_name
+# Mussum Ipsum
 
 Description. 
-The package package_name is used to:
-	- 
-	-
+The package mussum ipsum is used to:
+	Generate words, phrases, paragraphs and texts in mussum ipsum.
 
 ## Installation
 

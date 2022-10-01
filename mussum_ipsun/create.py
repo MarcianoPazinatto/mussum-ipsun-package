@@ -51,6 +51,7 @@ class Ipsum:
             text = text + " " + phrase
         return text.strip()
 
+
 if __name__ == '__main__':
 
     ipsum = Ipsum()
