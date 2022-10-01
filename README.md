@@ -10,19 +10,19 @@ The package package_name is used to:
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
 
 ```bash
-pip install mussum-ipsun
+pip install mussum_ipsun
 ```
 
 ## Usage
 
 ```python
-from mussum_ipsun import file1_name
-
-file1_name.my_function()
+from mussum_ipsun.generate_ipsum import GenerateMussumIpsun
+mussum = GenerateMussumIpsun()
+mussum.generate_word()
 ```
 
 ## Author
-My_name
+MarkCiano
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

@@ -6,13 +6,6 @@ class Ipsum:
     def __init__(self):
         self.final_list = list()
         self.final_list_phrase = list()
-
-        self.phrase = """
-        Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris,
-        paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis
-        mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num
-        significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis."""
-
         self.word = """
             Cacilds vidis litro abertis.
             Quem manda na minha terra sou euzis.
@@ -45,13 +38,24 @@ class Ipsum:
         return f"{phrase.strip()}."
 
     def get_random_paragraph(self):
-        pass
+        paragraf = ""
+        for _ in range(5):
+            phrase = self.get_random_phrase()
+            paragraf = paragraf + " " + phrase
+        return paragraf.strip()
 
     def get_random_text(self):
-        pass
+        text = ""
+        for _ in range(40):
+            phrase = self.get_random_phrase()
+            text = text + " " + phrase
+        return text.strip()
 
+if __name__ == '__main__':
 
-ipsum = Ipsum()
+    ipsum = Ipsum()
 
-print(ipsum.get_random_word())
-print(ipsum.get_random_phrase())
+    print(ipsum.get_random_word())
+    print(ipsum.get_random_phrase())
+    print(ipsum.get_random_paragraph())
+    print(ipsum.get_random_text())
