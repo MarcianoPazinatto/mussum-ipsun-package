@@ -1,4 +1,4 @@
-from create import Ipsum
+from mussum_ipsun.create import Ipsum
 
 
 class GenerateMussumIpsun:
